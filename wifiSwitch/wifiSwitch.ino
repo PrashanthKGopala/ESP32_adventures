@@ -21,8 +21,6 @@
 int relayGPIOs[NUM_RELAYS] = {2, 26, 27, 25, 33};
 
 // Replace with your network credentials
-//const char* ssid = "Obelix";
-//const char* password = "rempal600089";
 
 const char* PARAM_INPUT_1 = "relay";  
 const char* PARAM_INPUT_2 = "state";
@@ -113,7 +111,7 @@ void setup(){
   // Connect to Wi-Fi
  AsyncWiFiManager wifiManager(&server,&dns);
  wifiManager.resetSettings();  
- wifiManager.autoConnect("AP-NAME", "AP-PASSWORD");
+ wifiManager.autoConnect("ESP32-WIFI-SWITCH", "password");
 
   
 //  WiFi.begin(ssid, password);
