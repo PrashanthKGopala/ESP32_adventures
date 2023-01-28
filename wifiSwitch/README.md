@@ -12,14 +12,16 @@ Doing this might automatically redirect you to the WiFi configuration page.
 If not, open a browser on your phone/tab and type "192.168.4.1" in the search bar.
 
 In the WiFi configuration page, you will be able to provide your WiFi router's SSID and Password intuitively.
-Once you press 'Save', the webpage you are looking at, stops functioning since the ESP32 winds down the corresponding webserver.
+Once you press 'Save', the webpage you are looking at stops functioning since the ESP32 winds down the corresponding webserver.
 
-Using the credential provided, the ESP32 connects to the WiFi router.
+Using the credentials provided, the ESP32 connects to the WiFi router.
 
 THe ESP32 then spins-up a new async webserver to host buttons that can be switched on and off over WiFi.
 To connect to this webpage, you have to find the IP-address given to the ESP32 by your router and enter it in the search bar of a browser 
 on a device connected to the same WiFi network.
 
 This sketch references the following sources:
+
 https://randomnerdtutorials.com/esp32-relay-module-ac-web-server/
+
 https://github.com/alanswx/ESPAsyncWiFiManager
