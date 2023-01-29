@@ -1,6 +1,16 @@
 This sketch is written to run an async webserver on an ESP32 to switch pins on and off over WiFi.
 It also allows for Dynamic WiFi provisioning by spinning-up an async webserver to configure WiFi credentials (SSID and Password)
 
+Required packages:
+
+ESPAsyncWiFiManager
+Before compiling the code, please go to 
+https://github.com/alanswx/ESPAsyncWiFiManager
+Please download the code in zip format (via green 'code' button), rename the zip folder as follows...
+From 'ESPAsyncWiFiManager-master.zip' to 'ESPAsyncWiFiManager.zip'
+Please go to Arduino IDE Sketch->Include Library->Add .ZIP Library... and choose ESPAsyncWiFiManager.zip.
+
+
 How it works:
 
 Once you are done compiling and uploading this code onto an ESP32, it resets itself and starts up an Access Point (AP) of its own.
